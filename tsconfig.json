@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "types": [ "@types/wicg-file-system-access"]
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
