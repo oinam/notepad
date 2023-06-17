@@ -9,6 +9,14 @@ import { v4 as uuidv4 } from 'uuid'
 const tabs = ref<Tab[]>([])
 const activeTab = ref<Tab | null>(null)
 
+const isPwa = ref(false);
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    isPwa.value = true;
+  }
+});
+
 const handleCloseTab = (tab: Tab) => {
   const tabIndex = tabs.value.indexOf(tab)
   if (tab.unsaved) {
@@ -165,7 +173,8 @@ const handleMenuItemClicked = (item: string) => {
 }
 
 watch(activeTab, (newTab) => {
-  document.title = `Notepad - ${newTab?.title || 'Untitled'}`
+  const prefix = isPwa.value ? '' : 'Notepad - '
+  document.title = `${prefix}${newTab?.title || 'Untitled'}`
 })
 
 </script>
