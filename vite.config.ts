@@ -9,7 +9,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: { https: true },
-  base: '/',
+  base: '/notepadjs',
   plugins: [
     VitePWA({
       injectRegister: 'auto',
