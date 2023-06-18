@@ -198,6 +198,9 @@ watch(activeTab, (newTab) => {
 </template>
 
 <style>
+* {
+  color: black;
+}
 .container {
   display: flex;
   flex-direction: column;
