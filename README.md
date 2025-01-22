@@ -1,10 +1,10 @@
 ![notepadjs screensshot](screenshot.png?raw=true "notepadjs")
 
-# notepadjs
+# Notepad
 
-This is a simple app that imitates Windows Notepad. Installable as a PWA.
+A JavaScript rendition of [Windows Notepad](https://en.wikipedia.org/wiki/Windows_Notepad) (first released in 1983).
 
-Use it here: https://itamarom.github.io/notepadjs/
+Original/Credit Source Code at https://github.com/itamarom/notepadjs
 
 ## Installation
 
@@ -17,13 +17,6 @@ After [opening the app](https://itamarom.github.io/notepadjs/), click on the "In
 As a native Windows user who switched to macOS a few years back, one thing I never got over was the simplicity and usefulness of the old school Notepad app. This app aims to recreate that very same experience. It uses a fairly modern [File System Access API](https://wicg.github.io/file-system-access/) to allow reading and writing of local files.
 
 Also worth mentioning: this is my first time using Vue, so some things might not make perfect sense. Criticism, issues and PRs are welcome.
-
-## Roadmap
-
-- [X] Notepad-like UI
-- [X] Allow Local FS operations
-- [X] Installable as a PWA
-- [ ] Pixel perfect Notepad UI 
 
 ## Project Setup
 
