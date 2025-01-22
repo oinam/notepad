@@ -77,12 +77,21 @@ const onWindowKeyDown = (e: KeyboardEvent) => {
   }
 }
 
+const beforeWindowUnload = (e: Event) => {
+  const unsavedTabs = tabs.value.filter((tab) => tab.unsaved)
+  if (unsavedTabs.length > 0) {
+    e.preventDefault();
+  }
+};
+
 onMounted(() => {
   window.addEventListener('keydown', onWindowKeyDown)
+  window.addEventListener('beforeunload', beforeWindowUnload)
 })
 
 onUnmounted(() => {
   window.removeEventListener('keydown', onWindowKeyDown)
+  window.removeEventListener('beforeunload', beforeWindowUnload)
 })
 
 const openFileTab = async (handle: FileSystemFileHandle) => {
