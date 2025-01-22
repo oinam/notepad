@@ -1,8 +1,16 @@
+![notepadjs screensshot](screenshot.png?raw=true "notepadjs")
+
 # notepadjs
 
 This is a simple app that imitates Windows Notepad. Installable as a PWA.
 
 Use it here: https://itamarom.github.io/notepadjs/
+
+## Installation
+
+After [opening the app](https://itamarom.github.io/notepadjs/), click on the "Install" button in the top menu. Look for "Install Notepad". It might be under "Cast, Save, and Share":
+
+![notepadjs setup](setup.png?raw=true "setup")
 
 ## About
 
